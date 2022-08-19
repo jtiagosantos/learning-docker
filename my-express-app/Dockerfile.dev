@@ -5,6 +5,5 @@ WORKDIR /my-express-app/
 COPY . .
 
 RUN yarn
-RUN npm install -g nodemon
 
 CMD ["yarn", "start:dev"]
