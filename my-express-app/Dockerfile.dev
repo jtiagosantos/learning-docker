@@ -1,0 +1,10 @@
+FROM node:16.16.0-alpine
+
+WORKDIR /my-express-app/
+
+COPY . .
+
+RUN yarn
+RUN npm install -g nodemon
+
+CMD ["yarn", "start:dev"]
